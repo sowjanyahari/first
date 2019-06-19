@@ -1,0 +1,102 @@
+
+  .padding-side-menu{
+    margin-left: 0px;
+    width: 100% !important;
+    /* margin-top: 120px; */
+    margin-top: 0px;
+    background-color:#931445;
+  }
+  
+  /* side menu Style start */
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    
+    .nav li {
+      border-bottom: 1px solid #eee;
+    }
+  
+    .nav[_ngcontent-c3] li[_ngcontent-c3] a[_ngcontent-c3] {
+      font-size: 13px;
+      padding-left: 30px;
+      background-color: #931445;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+    #accordionMenu {
+      max-width: 100%;
+    }
+      .panel-body {
+      padding: 0;
+    }
+      .panel-group .panel+.panel {
+      margin-top: 0;
+      border-top: 0;
+    }
+      .panel-group .panel {
+      border-radius: 0;
+    }
+      .panel-default>.panel-heading {
+      color: #333;
+      background-color:transparent;
+      border-color: #931445;
+      padding: 0;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      font-family: 'Varela Round', sans-serif;
+    }
+      .panel-default>.panel-heading a {
+      display: block;
+      padding: 12px 35px;
+      text-decoration: none;
+      font-family: 'Varela Round', sans-serif;
+      font-size: 17px;
+      word-wrap: break-word;
+    }
+      .panel-default>.panel-heading a:after {
+      content: "";
+      position: relative;
+      top: 1px;
+      display: inline-block;
+      font-family: 'Glyphicons Halflings';
+      font-style: normal;
+      /* font-weight: 400; */
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      float:right;
+      transition: transform .25s linear;
+      -webkit-transition: -webkit-transform .25s linear;
+    }
+      .panel-default>.panel-heading a[aria-expanded="true"] {
+      background-color: #931445 ;  
+      /*  */
+    }
+      .panel-default>.panel-heading a[aria-expanded="true"]:after {
+      content: "\e113";
+    }
+      .panel-default>.panel-heading a[aria-expanded="false"]:after {
+      content: "\e114";
+    }
+    /* side menu end */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

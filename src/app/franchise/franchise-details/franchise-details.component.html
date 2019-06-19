@@ -1,0 +1,56 @@
+<div class="col-12 grid-margin strech-card">
+  <div class="card">
+      <div class="card-body">
+          <h4 class="card-title">Driver Detail form</h4>
+          <form class="forms-sample" (ngSubmit)="updateFranchise()" novalidate>
+                  <div class="form-group">
+                    <label for="frachiseId">Franchise_Id</label>
+                    <input type="text"[(ngModel)]="franchi.franchiseId" name="franchiseId" class="form-control" id="franchiseId"placeholder="franchise-Id">
+                  </div>
+                  <div class="form-group">
+                      <label for="franchiseIssueType">Issue_Type</label>
+                      <input type="text" [(ngModel)]="franchi.franchiseIssueType" name="franchiseIssueType" class="form-control" id="franchiseIssueType" placeholder="franchise-IssueType">
+                  </div> 
+                  <div class="form-group">
+                    <label for="franchiseIssueDescription">Issue Description</label>
+                    <textarea [(ngModel)]="franchi.franchiseIssueDescription" name="description" class="form-control"  id="franchiseIssueDescription" rows="4"></textarea>
+                  </div>
+                 
+                   
+                  
+                 <!--   <label for="franchiseSolution">Issue Solution</label>
+                    <textarea [(ngModel)]="franchi.franchiseSolution" name="franchiseSolution" class="form-control"  id="franchiseSolution" rows="4"></textarea>
+                  </div>
+-->
+                  <div class="example-container">
+                  <mat-form-field>
+                      <mat-select placeholder="FranchiseSolution" [(ngModel)]="franchi.franchiseSolution">
+                        <mat-option value="customer">customer</mat-option>
+                        <mat-option value="driver">driver</mat-option>
+                        <mat-option value="fleet">fleet</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                    <div></div>
+
+                   <!-- <mat-form-field>
+                        <mat-select placeholder="Select">
+                          <mat-option value="option">Option</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                  </div>
+                  -->
+                 
+                    <button type="submit" class="btn btn-success" >Submit</button>
+                    <button class="btn btn-light">Cancel</button>
+                </form>
+
+
+      </div>
+        
+
+
+  </div>
+
+
+</div>          

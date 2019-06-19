@@ -1,0 +1,31 @@
+<div class="col-md-12 grid-margin stretch-card">
+  <div class="card">
+      <div class="card-body">
+<h2 style="text-align: center"> Driver Issue List</h2>
+<title>Franchise Issue List</title>
+<table class="table table-striped table-bordered">
+  <thead >
+  <tr>
+    
+    <th>Franchise_ID</th>
+    <th>Type Of Issue</th>
+    <th>Issue_Description</th>
+    <th>Franchise_Solution</th>
+   
+    <th>Action</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let franchi of franchises.data">
+      
+    <td >{{franchi.franchiseId}}</td>
+    <td>{{franchi.franchiseIssueType}}</td>
+    <td>{{franchi.franchiseIssueDescription}}</td>
+    <td>{{franchi.franchiseSolution}}</td>
+    <td><button class="btn btn-success" type="submit" (click)="getFranchise(franchi)"> View</button></td>
+  </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>

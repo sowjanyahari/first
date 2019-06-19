@@ -1,0 +1,35 @@
+<!-- Side Navigation Bar-->
+<mat-sidenav-container class="sidenav-container">
+
+
+
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>MMG-Help-Center</span>
+      <span class="spacer"></span>
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Logout</a>
+    </mat-toolbar>
+
+    <!-- Add Content Here --> 
+    <div class="container">
+      <div class="row">
+          <h2>dash</h2>
+          <h2>faw</h2>
+
+      </div>
+    </div>
+
+
+
+  </mat-sidenav-content>
+</mat-sidenav-container>

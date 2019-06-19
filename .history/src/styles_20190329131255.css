@@ -1,0 +1,18 @@
+html,
+body{
+    height: 100%;
+}
+body{
+    margin:0;
+}
+
+.mat-drawer-inner-container {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    background: #931445;
+}
+panel-default[_ngcontent-c3] > .panel-heading[_ngcontent-c3] a[aria-expanded="true"][_ngcontent-c3] {
+    background-color: #931445;
+}

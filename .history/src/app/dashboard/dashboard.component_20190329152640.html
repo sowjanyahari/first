@@ -1,0 +1,88 @@
+<!--Dashboard-->
+<div class="container-fluid" data-dismiss="modal">
+  <!--Header-->
+  <app-header></app-header>
+    <!--Header-End-->
+<div class="row">
+  <!--Side Nav Bar-->
+  <app-side-nav></app-side-nav>
+    <!--Side Nav Bar End-->
+
+    <!-- Content of Dashboard-->
+    <div class="col-md-10 " style=" margin-top: 16px;">
+
+        <div class="panel panel-success">
+
+            <div class="panel-heading ">Dashboard Info
+
+
+
+            </div>
+
+
+            <div class="row">
+                <!-- Orders List Start -->
+                <div class="col-md-6">
+                  <div class="panel panel-success ">
+                    <div class="panel-heading  ">Recent Order List</div>
+                    <div class="panel-body  ">
+                      <!-- <h1>Recent Order List</h1> -->
+                      <table class="table   table-bordered  table-hover">
+                        <thead>
+                          <tr>
+                            <th>Customer ID</th>
+                            <th> Order date</th>
+                            <th>grand_total</th>
+                            <th>total_items</th>
+                          </tr>
+                        </thead>
+                        <!-- | paginate: { itemsPerPage: 8, currentPage: p } -->
+                        <tr *ngFor="let item of toporderList  ">
+                         <td>{{item.store_id}}</td>
+                         <td>{{item.billing_date}}</td> 
+                         <td>{{item.grand_total}}</td>
+                          <td>{{item.total_items}}</td>
+                        </tr>
+                      </table>
+                      <!-- <pagination-controls (pageChange)="p = $event"></pagination-controls> -->
+                    </div>
+                  </div>
+                </div>
+                <!-- Orders List Ends -->
+    
+                <!-- Sales-Analysis Starts -->
+                <div class="col-md-6">
+                  <div class="panel panel-success ">
+                    <div class="panel-heading  ">Top Customers</div>
+                    <div class="panel-body">
+                      <table class="table   table-bordered  table-hover">
+                        <thead>
+                          <tr>
+                            <th>Customer ID</th>
+                            <th>Customer Name </th>
+                            <th>Grand total</th>
+                            <th>Total items</th>
+                          </tr>
+                        </thead>
+                        <tr *ngFor="let item of topstoreList">
+                         <td>{{item.store_id}}</td>
+                         <td>{{item.store_name}}</td> 
+                         <td>{{item.grand_total}}</td>
+                          <td>{{item.total_items}}</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- Sales-Analysis Ends -->
+              </div>
+
+
+
+        </div>
+    
+    </div>
+
+  </div>
+
+</div>

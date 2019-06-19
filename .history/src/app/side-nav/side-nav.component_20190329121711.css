@@ -1,0 +1,27 @@
+.bg-color{
+    margin-top: 16px;
+    margin-left: 2px;
+    /* position: fixed; */
+  }
+  a{
+    color: #90C40A;
+    font-size: 14px;
+    margin-right: 7px;
+  }
+  .button-design{
+    
+    text-transform: uppercase !important;
+    font-family: 'Varela Round', sans-serif;
+    width: 100% !important;
+    text-align: left;
+    height: 50px;
+    box-shadow: 0px 1px 0px #DFF0D8;
+    font-size: 12px;
+    border: none;
+    color: black;
+    margin-bottom: 1px;
+  /* font-weight: 600; */
+    background-color: #931445;
+  }
+  
+  

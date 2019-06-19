@@ -1,0 +1,2 @@
+to run the dashboard without relaoding the page :
+ng serve --live-reload=false

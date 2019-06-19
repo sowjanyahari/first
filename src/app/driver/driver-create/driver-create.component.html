@@ -1,0 +1,47 @@
+
+<!--Driver creation-->
+<div class="col-12 grid-margin strech-card" [hidden]="submitted">
+  <div class="card">
+      <div class="card-body">
+          <h4 class="card-title">Driver Isue form</h4>
+          <form   #f="ngForm" novalidate (ngSubmit)="addDriver(f)" #driverForm="ngForm" >
+                  <div class="form-group">
+                    <label for="driverId">Driver_Id</label>
+                    <input matInput type="text"  class="form-control"  class="form-control"   id="driverId"
+                     required [(ngModel)]="driver.driverId" name="driverId" #driverId="ngModel" >
+                    <div [hidden]="driverId.valid || driverId.pristine"
+                    class="alert alert-danger">
+                   Driver_Id is required
+               </div>
+               
+             
+                </div>
+                  <div class="form-group">
+                      <label for="issueType">Issue_Type</label>
+                      <input matInput type="text" class="form-control" id="issueType"  [(ngModel)]="driver.issueType" name="issueType"   placeholder="issueType"   />
+                  </div> 
+                  <div class="form-group">
+                    <label for="issueDescription">Issue Description</label>
+                    <input matInput type="text" class="form-control"  x rows="4" placeholder="description " id="issuedescription" required 
+                    [(ngModel)]="driver.issueDescription" name="issuedescription"  #issuedescription="ngModel">
+                    <div [hidden]="issuedescription.valid || issuedescription.pristine"
+                    class="alert alert-danger">
+                  description is required
+               </div>
+                  </div>
+  <br><br>
+                  <mat-card-actions >
+                    <button mat-raised-button type="submit" class="btn btn-success" [disabled]="!driverForm.form.valid">Submit</button>
+                  </mat-card-actions>
+                    <button class="btn btn-light">Cancel</button>
+                </form>
+
+
+      </div>
+        
+
+
+  </div>
+
+
+</div>

@@ -1,0 +1,66 @@
+<div class="col-12 grid-margin strech-card">
+  <div class="card">
+      <div class="card-body">
+          <h4 class="card-title">Franchise Detail form</h4>
+          <form class="forms-sample" (ngSubmit)="updateFranchise()" novalidate>
+                  <div class="form-group">
+                    <label for="franchiseId">Franchise_Id:</label>
+                    <input type="text"[(ngModel)]="franchise.franchiseId" name="franchiseId" class="form-control" id="franchiseId" placeholder="franchise-Id">
+                  </div>
+                 <!-- <div class="form-group">
+                      <label for="issueType">Issue_Type</label>
+                      <input type="text" [(ngModel)]="drive.issueType" name="issueType" class="form-control" id="issueType" placeholder="Customer-Id">
+                  </div> 
+                -->
+                <div class="example-container">
+                    <mat-form-field>
+                        <label for="franchiseIssueType">Franchise Issue_Type:</label>
+                        <input matInput [(ngModel)]="franchise.franchiseIssueType" name="franchiseIssueType" class="form-control" id="franchiseIssueType">
+                    </mat-form-field>
+                    </div>
+                   
+
+                  <div class="form-group">
+                    <label for="franchiseIssueDescription">Issue Description:</label>
+                    <textarea matInput [(ngModel)]="franchise.franchiseIssueDescription" name="franchiseIssueDescription" class="form-control"  id="franchiseIssueDescription" rows="2"></textarea>
+                  </div>
+                  
+                    
+                 
+                 <!-- <div class="form-group">
+                    <label for="solution">Solution</label>
+                    <textarea [(ngModel)]="drive.solution" name="solution" class="form-control"  id="solution" rows="4"></textarea>
+                  </div>
+              
+                  <div class="form-group">
+                      <label for="solution">Solution</label>
+                    <select name="Solution" [(ngModel)]="drive.solution" name="solution" class="form-control"  id="solution">
+                      <option for="salary issue solved">salary issue solved</option>
+                      
+                      <option for="vehicle issue solved">vehicle issue solved</option>
+                      <option for="increment issue solved">increment issue solved</option>
+                      <option for="customer issue solved">customer issue solved</option>
+                    </select>
+                  </div>
+                    -->
+                  <div class="example-container">
+                    <mat-form-field>
+                      <mat-label for="solution">DriverSolution</mat-label>
+                        <textarea name="solution" [(ngModel)]="drive.solution" placeholder="DriverSolution" class="form-control"  id="solution">
+                        </textarea>
+                      </mat-form-field>
+                    </div>
+                    <div></div>
+                    <button type="submit" class="btn btn-success" >Submit</button>
+                    <button class="btn btn-light">Cancel</button>
+                </form>
+
+
+      </div>
+        
+
+
+  </div>
+
+
+</div>          

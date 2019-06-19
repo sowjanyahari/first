@@ -1,0 +1,24 @@
+<div class="col-md-12">
+  <h2> Customer Solved Issue List</h2>
+  <table class="table table-striped table-bordered" id="table">
+    <thead >
+    <tr>
+      <th>Issue_ID</th>
+      <th>Customer_ID</th>
+      <th>Type Of Issue</th>
+      <th>Description</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let cust of customer.data">
+      <td>{{cust.customer_Issue_Id}}</td>
+      <td>{{cust.customer_Id}}</td>
+      <td>{{cust.issue_Type}}</td>
+      <td>{{cust.issue_Description}}</td>
+      <td><button class="btn btn-primary" (click)="getCustomers(cust)"  [routerLink]="['/customerdetailes']">View</button></td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>

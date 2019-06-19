@@ -1,0 +1,7 @@
+.chart{
+    display: grid;
+    grid-template-columns: repeat(3, 5fr);
+    grid-gap: 1em;
+    
+}
+ 

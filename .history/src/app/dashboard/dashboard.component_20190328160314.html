@@ -1,0 +1,78 @@
+<!-- Side Navigation Bar-->
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="!(isHandset$ | async)">
+    <mat-toolbar color="primary">Admin</mat-toolbar>
+    <mat-nav-list >
+      <a>
+          <mat-card class="admin-card">
+              <mat-card-header>
+                <mat-icon>more_vert</mat-icon>
+                    <div mat-card-avatar class="dash-header-image"></div>
+                      <mat-card-title>MR. X</mat-card-title>
+                      <mat-card-subtitle></mat-card-subtitle>
+              </mat-card-header>
+            </mat-card>
+      </a>
+
+      <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+       Admin Panel
+            </a>
+          </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="panel-body">
+              <ul class="nav">
+                  <li><a [routerLink]="['/items']">Driver Issue</a></li>
+                  <!-- <li><a [routerLink]="['/addnewsubcategory']">Add-new-Sub-category</a></li> -->
+                  <li><a [routerLink]="['/items']">Customer Issue</a></li>
+                  <li><a [routerLink]="['/items']">Vehicle Issue</a></li>
+                  <li><a [routerLink]="['/items']">Goods Issues</a></li>
+                  <li><a [routerLink]="['/items']">Labours Issues</a></li>
+                  <li><a [routerLink]="['/items']">Payment Issues</a></li>
+                  <li><a [routerLink]="['/items']">Other Issues</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+      <a mat-list-item href="#">Driver</a>
+      <a mat-list-item href="#">Customer</a>
+      <a mat-list-item href="#">Fleet Operator</a>
+      <a mat-list-item href="#">Franchise</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>MMG-Help-Center</span>
+      <span class="spacer"></span>
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Logout</a>
+    </mat-toolbar>
+
+    <!-- Add Content Here --> 
+    <div class="container">
+      <div class="row">
+
+
+      </div>
+    </div>
+
+
+
+  </mat-sidenav-content>
+</mat-sidenav-container>

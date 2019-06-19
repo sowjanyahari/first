@@ -1,0 +1,32 @@
+         <!-- Content of Dashboard-->
+         <div class="col-12 grid-margin stretch-card">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Customer Issue Form</h4>
+              <p class="card-description" style="columns: #931445;">
+               
+              </p>
+              <form class="forms-sample"  (ngSubmit)="updateCustomer()" novalidate>
+                <div class="form-group">
+                  <label for="exampleInputName1">Customer-Id</label>
+                  <input type="text"[(ngModel)]="customer.customer_Id" name="customerId" class="form-control" id="exampleInputName1" placeholder="Customer-Id">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName2">Issue_Type</label>
+                    <input type="text" [(ngModel)]="customer.issue_Type" name="issueType" class="form-control" id="exampleInputName1" placeholder="Issue-Type">
+                </div> 
+                <div class="form-group">
+                  <label for="exampleInputPassword4">Issue Description</label>
+                  <textarea [(ngModel)]="customer.issue_Description" name="description" class="form-control"  id="exampleTextarea1" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                  
+                <img src="src\assets\{{customer.customer_Issue_Id}}.jpg" height="100%" width="100%"/>
+                  </div>
+
+                  <button type="submit" class="btn btn-success">Update</button>&nbsp; &nbsp;
+                  <button class="btn btn-primary" (click)="goBack()">Back</button>
+              </form>
+            </div>
+          </div>
+      </div>
